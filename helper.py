@@ -11,7 +11,7 @@ def featMatch(desc1, desc2, metric='hamming', ratio=0.8):
 	return matches
 
 
-def plotMatches(im1,im2,matches,locs1,locs2, color='g'):
+def plotMatches(im1,im2,matches,locs1,locs2, color='r'):
 	fig, ax = plt.subplots(nrows=1, ncols=1)
 	im1 = cv2.cvtColor(im1, cv2.COLOR_BGR2GRAY)
 	im2 = cv2.cvtColor(im2, cv2.COLOR_BGR2GRAY)
